@@ -1,0 +1,412 @@
+/* Enable smooth scrolling */
+:root {
+  --blackcolor: #000000;
+  --whitecolor: #ffffff;
+  --greycolor: #7a7a7a;
+  --secondarycolor: #313131;
+}
+*{
+  background-color: #000000;
+}
+ body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #000; /* Set background color */
+  color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+/* .bgtext{
+  font-size: 25rem;
+  font-weight: 10000;
+  color: #ffffff;
+  text-align: center; 
+  opacity: 0.05;
+  justify-content: center;
+  align-items: center;
+  font-family: "Saira", sans-serif;
+
+
+  position: absolute;
+} */
+
+.let {
+  position: absolute;
+  margin: 20px 0px 0px 20px;
+  font-weight: 100000;
+  font-size: 5rem;
+}
+
+.head {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 10000;
+
+  }
+
+  h4 {
+    font-size: 2.1rem;
+    font-weight: 10000;
+    letter-spacing: 10000;
+    margin-top: 0;
+
+  }
+
+  .mini_text {
+    font-size: 15px;
+  }
+}
+
+nav {
+
+
+  background-image: linear-gradient(to right, #000000 0%, rgb(0, 0, 0) 100%);
+  padding: 12px 0;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  left: 30%;
+  right: 30%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 0.5px solid rgb(70, 70, 70);
+  opacity: 0.8;
+  gap: 10px;
+}
+
+i {
+  font-size: 30px;
+  color: #ffffff;
+
+}
+
+nav a {
+
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000000;
+  /* Highlight on hover */
+}  
+
+
+
+#about {
+
+  height: 100vh;
+  padding: 2px 0px;
+
+  #rajesh{
+    border-radius: 10px;
+    filter: grayscale(100%);
+    justify-content: center;
+   
+
+  }
+
+
+  button{
+    padding: 10px;
+    background: rgba(43, 42, 42, 0.295);
+    border: 1px solid white;
+    display: flex;
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    background: transparent
+  }
+}
+
+
+
+
+
+.about_container {
+
+  font-family: "Saira", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  text-align: justify;
+  margin-top: 80px;
+
+}
+
+.skill {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.grid-item {
+
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.skill_icon {
+  img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+
+
+  }
+
+
+  img:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+}
+
+
+#services {
+
+  height: 100vh;
+  padding: 30px 0px;
+
+
+}
+
+
+.card {
+  margin-top: 120px;
+  font-family: "Saira", sans-serif;
+  background: linear-gradient(to top, #000000 0%, rgb(20, 20, 20) 100%);
+  color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0.5px 0.5px 5px rgba(150, 150, 150, 0.5);
+
+
+
+}
+
+.card {
+  img {
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    justify-content: space-around;
+    filter: grayscale(100%);
+  }
+
+  img:hover {
+
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card-body {
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 15px;
+    background: transparent;
+
+    h3,p{
+      background: transparent;
+    }
+  }
+
+}
+
+
+
+#footer {
+  background: linear-gradient(to right, #1d1d1d 0%, black 100%);
+  color: var(--whitecolor);
+  padding: 3px;
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+
+  p{
+    background: transparent;
+    margin-top: 4px;
+  }
+}
+
+
+
+
+#contact {
+  height: 80vh;
+  padding: 10px 0px;
+
+}
+
+
+
+  
+
+#contact{
+
+
+  p,form {
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 80px;
+    color: white;
+    
+  }
+
+  input,
+  textarea {
+    background-color: black;
+    border: 0.5px solid rgb(255, 255, 255);
+    margin-top: 15px;
+    color: var(--whitecolor);
+    font-family: "Saira", sans-serif;
+    font-size: 18px;
+
+  }
+
+  .submit {
+    width: 100%;
+    margin-top: 20px;
+    background: linear-gradient(to right, #2b2b2b 0%, rgba(12, 12, 12, 0.877) 100%);
+    color: white;
+    border: none;
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+
+
+    a {
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    i {
+      color: #ffffff;
+      font-size: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    i:hover {
+      color: rgb(59, 59, 59);
+      cursor: pointer;
+    }
+  }
+
+  .social {
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+  }
+
+
+}
+
+#backbtn {
+  background: linear-gradient(to right, #111111 0%, rgba(0, 0, 0, 0.877) 100%);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 10000;
+  padding: 10px 10px;
+   margin-right: 0;
+  float: right;
+  
+
+
+}
+
+#backbtn {
+  a,i {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding-bottom: 5px;
+    background: transparent;
+    
+  }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width:768px){
+  #services{
+    height: 190vh;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width:425px){
+  #services{
+    height: 180vh;
+  }
+  .head {
+  h1{
+    font-size: 4rem;
+  }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 90%; /* Full width on small screens */
+    left: 5%;
+    right: 5%;
+    gap: 8px;
+  }
+
+  i {
+    font-size: 25px; /* Reduce icon size */
+  }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px){
+  nav {
+    width: 50%; /* Full width on small screens */
+    left: 5%;
+    right: 5%;
+    gap: 8px;
+  }
+
+  i {
+    font-size: 30px; /* Reduce icon size */
+  }
+}
